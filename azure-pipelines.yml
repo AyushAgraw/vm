@@ -13,4 +13,5 @@ steps:
     inputs:
       provider: 'azurerm'
       command: 'validate'
-      
+
+     
