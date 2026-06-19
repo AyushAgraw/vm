@@ -14,4 +14,15 @@ steps:
       provider: 'azurerm'
       command: 'validate'
 
+  - task: TerraformTask@5
+    inputs:
+      provider: 'azurerm'
+      command: 'init'
+      workingDirectory: '$(System.DefaultWorkingDirectory)\Parent\DEV\'
+      backendServiceArm: 'netflix-service-connection'
+      backendAzureRmResourceGroupName: 'rg841'
+      backendAzureRmStorageAccountName: 'st841'
+      backendAzureRmContainerName: 'cont841'
+      backendAzureRmKey: 'backend.tfstate'
+
      
