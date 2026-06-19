@@ -1,4 +1,5 @@
 trigger: none
+pool: netflix-agent
 
 steps:
   - task: TerraformTask@5
